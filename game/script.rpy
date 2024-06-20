@@ -25,7 +25,7 @@ default puzzlecomplete = False
 
 image snow1 = Fixed(SnowBlossom("/images/animated/snow/snow1.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
 image snow2 = Fixed(SnowBlossom("/images/animated/snow/snow2.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
-
+image snow3 = Fixed(SnowBlossom("/images/animated/snow/snow3.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
 
 init python:
 
@@ -42,6 +42,7 @@ init python:
 label start:
     show snow1
     show snow2
+    show snow3
     # Erste Szene nach dem Start eines neuen Spiels
     narrator "This game is currently in development, this is not the final version of this game."
 
