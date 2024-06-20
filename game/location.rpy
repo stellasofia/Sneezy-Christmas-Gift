@@ -4,6 +4,9 @@ screen locationScreen():
 
 
     if location == "bg scene1":
+        add "snow1"
+        add "snow2"
+
         #Star-Button zu Scene2
         imagebutton:
             idle "animated_star"
@@ -46,6 +49,9 @@ screen locationScreen():
                 action [SetVariable("item_picked_up", "gloves"), Jump("collecting")]
 
     elif location == "bg scene2":
+        add "snow1"
+        add "snow2"
+
         #Star-Button zu Scene3
         imagebutton:
             idle "animated_star"
@@ -131,6 +137,9 @@ screen locationScreen():
                 action [SetVariable("item_picked_up", "paper"), Jump("collecting")]
 
     if location == "bg scene4":
+        add "snow1"
+        add "snow2"
+
         imagebutton:
             idle "animated_star"
             hover "/animated/star/animated_star_hover.png"

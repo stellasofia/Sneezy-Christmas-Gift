@@ -23,6 +23,10 @@ default dough = False
 default cookierolled = False
 default puzzlecomplete = False
 
+image snow1 = Fixed(SnowBlossom("/images/animated/snow/snow1.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
+image snow2 = Fixed(SnowBlossom("/images/animated/snow/snow2.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
+
+
 init python:
 
     myfade = Fade(0.3, 0.2, 0.3)
@@ -36,6 +40,8 @@ init python:
 
 
 label start:
+    show snow1
+    show snow2
     # Erste Szene nach dem Start eines neuen Spiels
     narrator "This game is currently in development, this is not the final version of this game."
 
