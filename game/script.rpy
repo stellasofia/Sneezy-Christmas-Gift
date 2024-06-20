@@ -23,9 +23,9 @@ default dough = False
 default cookierolled = False
 default puzzlecomplete = False
 
-image snow1 = Fixed(SnowBlossom("/images/animated/snow/snow1.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
-image snow2 = Fixed(SnowBlossom("/images/animated/snow/snow2.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
-image snow3 = Fixed(SnowBlossom("/images/animated/snow/snow3.png", 50, xspeed=(20, 50), yspeed=(100, 200), start=50))
+image snow1 = Fixed(SnowBlossom(im.Alpha("/images/animated/snow/snow1.png", 0.8), 20, xspeed=(20, 50), yspeed=(95, 160), start=50))
+image snow2 = Fixed(SnowBlossom(im.Alpha("/images/animated/snow/snow2.png", 0.5), 30, xspeed=(30, 40), yspeed=(120, 220), start=30))
+image snow3 = Fixed(SnowBlossom(im.Alpha("/images/animated/snow/snow3.png", 0.7), 10, xspeed=(10, 40), yspeed=(80, 180), start=60))
 
 init python:
 

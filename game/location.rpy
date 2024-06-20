@@ -6,6 +6,7 @@ screen locationScreen():
     if location == "bg scene1":
         add "snow1"
         add "snow2"
+        add "snow3"
 
         #Star-Button zu Scene2
         imagebutton:
@@ -51,6 +52,7 @@ screen locationScreen():
     elif location == "bg scene2":
         add "snow1"
         add "snow2"
+        add "snow3"
 
         #Star-Button zu Scene3
         imagebutton:
@@ -139,6 +141,7 @@ screen locationScreen():
     if location == "bg scene4":
         add "snow1"
         add "snow2"
+        add "snow3"
 
         imagebutton:
             idle "animated_star"
