@@ -44,7 +44,7 @@ label start:
     show snow2
     show snow3
     # Erste Szene nach dem Start eines neuen Spiels
-    narrator "This game is currently in development, this is not the final version of this game."
+    #narrator "This game is currently in development, this is not the final version of this game."
 
     play music "audio/music/Music2.mp3" fadein 1.0 volume 0.2
 
