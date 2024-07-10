@@ -15,9 +15,9 @@ default sneezy_talkcounter = 0
 # neu
 default klaus = False
 default sleight = False
-default cookie = False
-default presentCheck = False #FALSE
-default klaus_talkcounter = 0 #0
+default cookie = True #false
+default presentCheck = False #false
+default klaus_talkcounter = 3 #0
 default sleightChecked = False
 default dough = False
 default cookierolled = False

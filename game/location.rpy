@@ -179,9 +179,13 @@ screen locationScreen():
             imagebutton:
                     idle "sleight.png"
                     hover "sleight_hover.png"
-                    xpos 1550
-                    ypos 500
-                    action Jump("sleightAction")
+                    xpos 1458
+                    ypos 364
+                    action [
+                        Function(lambda: play_sound("audio/fx/click1.mp3", 0.5)),
+                        Jump("sleightAction")
+                    ]
+                        
 
 
     if location == "bg scene5":
@@ -207,8 +211,8 @@ screen locationScreen():
             imagebutton:
                         idle "dough.png"
                         hover "dough_hover.png"
-                        xpos 1100
-                        ypos 800
+                        xpos 1017
+                        ypos 805
                         action [SetVariable("item_picked_up", "dough"), Jump("collecting")]
 
         #imagebutton:
