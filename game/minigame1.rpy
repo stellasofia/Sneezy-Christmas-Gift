@@ -1,8 +1,10 @@
 default page_pieces = 4
-default full_page_size = (1023, 475)
-default piece_coordinates = [(413, 434), (852, 485), (407, 611), (827, 649)]
+default full_page_size = (365, 338)
+default piece_coordinates = [(878, 478), (1060, 478), (878, 646), (1060, 646)]
 default initial_piece_coordinates = []
 default finished_pieces = 0
+define dissolve = Dissolve(0.5)
+
 
 init python:
     def setup_puzzle():
@@ -28,11 +30,14 @@ init python:
 
 screen reassemble_puzzle:
     image "/minigame1/background.png"
+    add "snow1"
+    add "snow2"
+    add "snow3"
     frame:
         background "/minigame1/puzzle-frame.png"
         xysize full_page_size
         anchor(0.5, 0.5)
-        pos(650, 535)
+        pos(975, 565)
 
     draggroup:
         for i in range(page_pieces):
@@ -55,3 +60,5 @@ screen reassemble_puzzle:
                 anchor(0.5, 0.5)
                 focus_mask True
                 image "/minigame1/Pieces/piece-%s.png" % (i + 1) alpha 0.0 #unsichtbar
+
+                
